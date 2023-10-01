@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+ul li {
+    list-style: none;
+}
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: rgb(30, 38, 53);
+    min-height: 100vh;
+}
+.container header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 30px 0;
+}
+.container header .logo > img {
+    position: absolute;
+    left: 80px;
+}
+.container header .links ul {
+    display: flex;
+    position: absolute;
+    right: 80px;
+}
+.container header .links ul li {
+    margin-left: 25px;
+    letter-spacing: 1.2px;
+    transition: 0.4s;
+}
+.container header .links ul li:hover {
+    border-bottom: 2px solid white;
+    font-size: 18px;
+}
+nav .all-your-files {
+    max-width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+}
+nav .all-your-files img {
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+nav .all-your-files h2 {
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+nav .all-your-files p {
+    text-align: center;
+    color: #999;
+    margin-top: 20px;
+    font-size: 15px;
+}
+nav .all-your-files button {
+    padding: 10px 55px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 30px 0;
+    position: absolute;
+    left: 28%;
+    background: #499eb7;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+nav .all-your-files button:hover {
+    background-color: transparent;
+    border: 1px solid #499eb7;
+    color: #499eb7;
+}
+nav .imgs-hardware {
+    max-width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    left: 12%;
+    top: 150%;
+    gap: 50px 0;
+}
+nav .imgs-hardware img {
+    position: relative;
+    left: 40%;
+}
+nav .imgs-hardware h3,
+nav .imgs-hardware p {
+    text-align: center;
+    color: #FFF;
+}
+nav .imgs-hardware h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+nav .imgs-hardware p {
+    font-size: 13px;
+    color: #999;
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+nav .stay-productive {
+    position: absolute;
+    left: 30%;
+    top: 290%;
+    transform: translate(-50%, -50%);
+}
+nav .stay-productive .text {
+    position: absolute;
+    width: 100%;
+    left: 110%;
+    top: 20%;
+    color: white;
+}
+nav .stay-productive .text h2 {
+    font-weight: 600;
+    margin: 15px 0;
+}
+nav .stay-productive .text p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+}
+nav .stay-productive .text span {
+    position: relative;
+    top: 20px;
+    border-bottom: 2px solid aqua;
+    color: #1dd1d1;
+    font-weight: normal;
+    margin: 2px 0;
+}
+.container .boxs {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 360%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.container .boxs .box-one,
+.container .boxs .box-two,
+.container .boxs .box-three {
+    background-color: rgb(37, 50, 74);
+    border-radius: 6px;
+    padding: 10px 10px;
+    margin: 0 15px;
+    box-shadow: 0px 0px 10px -1px rgb(41, 52, 72);
+}
+.container .boxs .profile {
+    display: flex;
+    margin: 10px 0;
+}
+.container .boxs .profile h3 {
+    font-size: 11px;
+    color: #FFF;
+}
+.container .boxs .profile p {
+    font-size: 10px;
+    color: #FFF;
+    position: relative;
+    top: 12px;
+    left: -60px;
+}
+.container .rectangle {
+    position: absolute;
+    width: 70%;
+    background: #0f1620;
+    padding: 50px 20px;
+    left: 15%;
+    border-radius: 8px;
+    bottom: -340%;
+}
+.container .rectangle .content h1 {
+    text-align: center;
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 600;
+    position: relative;
+    top: -20px;
+}
+.container .rectangle .content p {
+    text-align: center;
+    font-size: 14px;
+    color: #ababab;
+    position: relative;
+    top: -10px;
+}
+.container .rectangle .content form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+}
+.container .rectangle .content form input {
+    width: 400px;
+    padding: 12px 5px;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: none;
+    transition: 0.4s;
+    outline: none;
+    font-size: 18px;
+}
+.container .rectangle .content form input:focus {
+    background-color: #555;
+    color: gold;
+}
+.container .rectangle .content form button {
+    width: 150px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #41bbe0;
+    cursor: pointer;
+    color: #fafafa;
+    transition: 0.5s;
+}
+.container .rectangle .content form button:hover {
+    background-color: transparent;
+    border: 1px solid #499eb7;
+    color: #499eb7;
+}
+footer {
+    background-color: #131e2e;
+    position: absolute;
+    bottom: -380%;
+    width: 100%;
+    padding: 50px 0;
+    z-index: -1;
+}
+footer .finish {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: #FFF;
+    margin-left: 50px;
+}
+footer .finish .about ul li,
+footer .finish .contact ul li {
+    margin: 5px 0;
+}
+footer .finish .about ul li a:hover,
+footer .finish .contact ul li a:hover {
+    color: #41bbe0;
+    transition: 0.4s;
+}
+footer .social a {
+    margin: 0 5px;
+    /* border: 2px solid rgb(23, 23, 23); */
+    border-radius: 50%;
+    padding: 15px 12px;
+    transition: 0.4s;
+}
+footer .social a:hover {
+    background-color: rgba(255, 255, 255, 0.26);
+    box-shadow: 0px 4px 5px -1px white;
+}
+.fa-facebook {
+    color: rgb(16, 16, 194);
+}
+.fa-twitter {
+    color: rgb(20, 20, 163);
+}
+.fa-instagram {
+    color: rgb(194, 16, 129);
+}
